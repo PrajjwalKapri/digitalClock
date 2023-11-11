@@ -1,0 +1,225 @@
+body{
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    height: 100vh;
+    justify-content: center;
+    background: url('bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: snow;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+.clock{
+    display: flex;
+    opacity: 0.6;
+    position: relative;
+
+}
+.clock div{
+    margin: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.clock span{
+    background-color: grey;
+    height: 15rem;
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:600;
+    font-size: 8rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, .4);
+    
+
+}
+.clock .text{
+    height: 2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
+    background: white;
+}
+#greet{
+    color: white;
+    letter-spacing: .2rem;
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding: 1.2rem;
+    margin-top: 3rem;
+    background-color: rgba(150, 150, 150, .4);
+    border-radius: 15px;
+   
+}
+
+.clock #ampm{
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.7rem;
+    position: absolute;
+    bottom: 0;
+    background: aqua;
+}
+
+.cpr{
+    color: white;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 1.6rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .clock span{
+        background-color: grey;
+        height: 10rem;.clock #ampm{
+            width: 5rem;
+            height: 2rem;
+            font-size: 1.7rem;
+            position: absolute;
+            bottom: 0;
+            background: aqua;
+        }
+        
+        width: 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight:600;
+        font-size: 6rem;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, .4);
+        
+    
+    }
+    #greet{
+        color: white;
+        letter-spacing: .2rem;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        padding: 1.2rem;
+        margin-top: 3rem;
+        background-color: rgba(150, 150, 150, .4);
+        border-radius: 15px;
+        width: 50%;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 880px) {
+    .clock span{
+        background-color: grey;
+        height: 7rem;
+        width: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight:600;
+        font-size: 4rem;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, .4);
+        
+    
+    }
+    #greet{
+        color: white;
+        letter-spacing: .2rem;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        padding: 1.2rem;
+        text-align: center;
+        margin-top: 3rem;
+        background-color: rgba(150, 150, 150, .4);
+        border-radius: 15px;
+        width: 80%;
+       
+    }
+    .clock .text{
+        height: 1.8rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        letter-spacing: .15rem;
+        background: white;
+    }
+    .clock #ampm{
+        width: 3rem;
+        height: rem;
+        font-size: 1.7rem;
+        position: absolute;
+        bottom: 0;
+        background: aqua;
+    }
+    
+    
+}
+
+@media screen and (max-width: 600px) {
+    .clock span{
+        background-color: grey;
+        height: 4rem;
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight:600;
+        font-size: 2rem;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, .4);
+        
+    
+    }
+    #greet{
+        color: white;
+        letter-spacing: .1rem;
+        font-family: sans-serif;
+        font-size: .9rem;
+        padding: 1rem;
+        margin-top: 3rem;
+        background-color: rgba(150, 150, 150, .4);
+        border-radius: 15px;
+        width: 80%;
+        text-align: center;
+    }
+    .clock .text{
+        height: 1.8rem;
+        font-size: .6rem;
+        font-weight: 500;
+        letter-spacing: .1rem;
+        background: white;
+    }
+    .clock #ampm{
+        width: 2rem;
+        height: 1rem;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 0;
+        background: aqua;
+    }
+    
+
+    h1{
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    .cpr{
+        font-size: 1rem;
+    }
+    
+}
